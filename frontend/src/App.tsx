@@ -9,7 +9,6 @@ function App() {
 
   const {authUser, isLoading} = useAuthContext();
 
-  console.log(authUser, isLoading)
   if(isLoading) return <h1>Loading...</h1>
   return (
     <div className='p-4 h-screen flex items-center justify-center '>
