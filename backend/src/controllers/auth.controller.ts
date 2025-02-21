@@ -57,7 +57,7 @@ export const register = async (req: Request, res: Response) => {
       res.status(400).json({ error: "Something went wrong" });
     }
   } catch (error: any) {
-    console.log("Error in register", error.message);
+    console.error("Error in register", error.message);
     res.status(500).json({ error: error.message });
   }
 };
@@ -87,7 +87,7 @@ export const login = async (req: Request, res: Response) => {
       profilePic: user.profilePic,
     });
   } catch (error: any) {
-    console.log("Error in register", error.message);
+    console.error("Error in register", error.message);
     res.status(500).json({ error: error.message });
   }
 };

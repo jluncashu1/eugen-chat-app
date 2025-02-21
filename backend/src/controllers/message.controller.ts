@@ -53,7 +53,6 @@ export const sendMessage = async (req: Request, res: Response) => {
 
     if(receiverSocketId) {
       io.to(receiverSocketId).emit("newMessage", newMessage);
-      console.log(newMessage)
     }
 
     res.status(201).json(newMessage);
