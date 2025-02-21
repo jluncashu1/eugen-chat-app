@@ -3,10 +3,10 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import path from "path";
 
-import authRoutes from "./routes/auth.route";
-import messageRoutes from "./routes/message.route";
+import authRoutes from "./routes/auth.route.js";
+import messageRoutes from "./routes/message.route.js";
 
-import { app, server } from "./socket/socket";
+import { app, server } from "./socket/socket.js";
 
 dotenv.config();
 
